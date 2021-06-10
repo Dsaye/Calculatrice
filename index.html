@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript"  src="js/app.js"></script>
+     <!-- <link rel="stylesheet" href="css/bootstrap-cerulean.min.css"> -->
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+     <!-- Google Fonts -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+     <!-- Bootstrap core CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Material Design Bootstrap -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	<title>CALCULATRICE</title>
+</head>
+<body>
+    <div class="container">
+	<div class="calculer">
+		<form name="calculatrice" action="" onSubmit="resultat();return false;">
+      <input type="text" name="affiche" class="affiche">
+
+      <div class="calculateur">
+        <button type="button" class="operateur" value="+"  onClick="ajouter('+')">+</button>
+        <button type="button" class="operateur" value="-" onClick="ajouter('-')">-</button>
+        <button type="button" class="operateur" value="*"  onClick="ajouter('*')">×</button>
+        <button type="button" class="operateur" value="/"  onClick="ajouter('/')">÷</button>
+
+        <button type="button" value="7"  onClick="ajouter('7')">7</button>
+        <button type="button" value="8"  onClick="ajouter('8')">8</button>
+        <button type="button" value="9"  onClick="ajouter('9')">9</button>
+
+        <button type="button" value="4"  onClick="ajouter('4')">4</button>
+        <button type="button" value="5"  onClick="ajouter('5')">5</button>
+        <button type="button" value="6"  onClick="ajouter('6')">6</button>
+
+        <button type="button" value="1"  onClick="ajouter('1')">1</button>
+        <button type="button" value="2"  onClick="ajouter('2')">2</button>
+        <button type="button" value="3"  onClick="ajouter('3')">3</button>
+
+        <button type="button" value="0"  onClick="ajouter('0')">0</button>
+        <button type="button" class="decimal" value="."  onClick="ajouter('.')">.</button>
+        <button type="reset" class="effacer" value="effacer">AC</button>
+
+        <button type="button" class="egale operateur" value="=" onClick="resultat()">=</button>
+      </div>
+  </form>
+</div>
+    </div>
+
+</body>
+</html>
